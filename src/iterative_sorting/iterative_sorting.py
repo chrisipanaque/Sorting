@@ -37,4 +37,14 @@ def bubble_sort(arr):
 # STRETCH: implement the Count Sort function below
 def count_sort(arr, maximum=-1):
 
+    counter_dictionary = {}
+
+    for element in arr:
+        if counter_dictionary[element]:
+            counter_dictionary[element] += 1
+        else:
+            counter_dictionary[element] = 1
+
+    print(counter_dictionary)
+
     return arr
