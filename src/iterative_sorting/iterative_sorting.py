@@ -35,7 +35,9 @@ def bubble_sort(arr):
 
 
 # STRETCH: implement the Count Sort function below
-def count_sort(arr, maximum=-1):
+def count_sort(arr):
+
+    minimum = arr[0]
 
     counter_dictionary = {}
 
@@ -45,10 +47,16 @@ def count_sort(arr, maximum=-1):
         else:
             counter_dictionary[element] = 1
 
-        if element > maximum:
-            maximum = element
+        if element < minimum:
+            minimum = element
 
     print(counter_dictionary)
-    print(maximum)  # the maximum value in arr
+    print(minimum)  # the minimum value in arr
+
+    for i in range(len(arr) - 1):
+        if counter_dictionary[minimum] > 0:
+            arr[i] = minimum
+            counter_dictionary[minimum] -= 1
+            minimum += 1
 
     return arr
