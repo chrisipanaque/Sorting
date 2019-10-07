@@ -40,7 +40,7 @@ def count_sort(arr, maximum=-1):
     counter_dictionary = {}
 
     for element in arr:
-        if counter_dictionary[element]:
+        if hasattr(counter_dictionary, f"{element}"):
             counter_dictionary[element] += 1
         else:
             counter_dictionary[element] = 1
