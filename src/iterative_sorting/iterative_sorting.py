@@ -45,6 +45,10 @@ def count_sort(arr, maximum=-1):
         else:
             counter_dictionary[element] = 1
 
+        if element > maximum:
+            maximum = element
+
     print(counter_dictionary)
+    print(maximum)  # the maximum value in arr
 
     return arr
