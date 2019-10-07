@@ -57,6 +57,6 @@ def count_sort(arr):
         if counter_dictionary[minimum] > 0:
             arr[i] = minimum
             counter_dictionary[minimum] -= 1
-            minimum += 1
+        minimum += 1
 
     return arr
