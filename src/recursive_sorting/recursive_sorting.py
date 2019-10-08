@@ -26,8 +26,11 @@ def merge_sort(arr):
     # left array 0 to center
     # right array center to end
     # return recursion merge(left, right)
+    center = len(arr) // 2
+    left = arr[0:center]
+    right = arr[center:]
 
-    return arr
+    return merge_sort(merge(left, right))
 
 
 # STRETCH: implement an in-place merge sort algorithm
