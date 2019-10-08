@@ -1,7 +1,8 @@
 # TO-DO: complete the help function below to merge 2 sorted arrays
 def merge(arrA, arrB):
-    elements = len(arrA) + len(arrB)
-    merged_arr = [0] * elements
+    # elements = len(arrA) + len(arrB)
+    # merged_arr = [0] * elements
+    merged_arr = []
     # TO-DO
     while len(arrA) > 0 and len(arrB) > 0:
         if arrA[0] < arrB[0]:
@@ -13,7 +14,7 @@ def merge(arrA, arrB):
 
 
 list1 = [-3, 9]
-list2 = [8, 1]
+list2 = [1, 8]
 
 print(merge(list1, list2))
 
