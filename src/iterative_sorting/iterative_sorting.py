@@ -1,4 +1,8 @@
 # TO-DO: Complete the selection_sort() function below
+
+# time O(n^2) space O(1)
+
+
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -18,6 +22,7 @@ def selection_sort(arr):
 
 
 # TO-DO:  implement the Bubble Sort function below
+# time O(n^2) space O(1)
 def bubble_sort(arr):
     isSorted = False
     counter = 0
