@@ -18,20 +18,29 @@ list2 = [1, 8]
 
 print(merge(list1, list2))
 
+arr = [4, 8, 9, 1]
+
+center = len(arr) // 2
+left = arr[0:center]
+right = arr[center:]
+
+print(left)
+print(right)
+
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort(arr):
-    # TO-DO
-    # split array by 2
-    # left array 0 to center
-    # right array center to end
-    # return recursion merge(left, right)
+        # TO-DO
+        # split array by 2
+        # left array 0 to center
+        # right array center to end
+        # return recursion merge(left, right)
 
     if len(arr) == 1:
         return arr
 
     center = len(arr) // 2
-    left = arr[0:center]
+    left = arr[:center]
     right = arr[center:]
 
     return merge(merge_sort(left), merge_sort(right))
