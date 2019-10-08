@@ -22,6 +22,10 @@ print(merge(list1, list2))
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort(arr):
     # TO-DO
+    # split array by 2
+    # left array 0 to center
+    # right array center to end
+    # return recursion merge(left, right)
 
     return arr
 
